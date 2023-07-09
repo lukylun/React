@@ -1,3 +1,5 @@
+//routes.js로 Routes부분을 꺼내기 전
+
 import React, { useState } from 'react';
 import Movie from './components/Movie';
 
@@ -74,18 +76,23 @@ function App() {
         {/* <Switch></Switch> */} 
         <div className='container'>
           <Routes>
-            {routes.map(route => {
-              return (
-                <Route 
-                  key={route.path} 
-                  path={route.path} 
-                  element={
-                  <route.component />
-                  }
-                >
-                </Route>                  
-              )
-            })}
+            <Route path="/movies" element={
+              // element 상속
+              // <MoviesRouter />
+              <Movies />
+            }>
+              {/* <h1>Movie List</h1>
+              <MovieForm addMovie={addMovie} />
+              {renderMovies} */}
+            </Route>  
+            <Route path="/users" element={
+              <Users />
+            }>
+            </Route>
+            <Route path="/" element={
+              <Home />
+            } exact>
+            </Route>
           </Routes>
         </div>
       </div>          

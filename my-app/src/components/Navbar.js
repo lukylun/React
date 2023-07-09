@@ -18,7 +18,7 @@ const Navbar = () => {
                             className="nav-link"
                             aria-current="page"
                             to="/movies"
-                            activeClassName="active"
+                            activeclassname="active"
                         >
                             Movies
                         </NavLink>
@@ -27,7 +27,7 @@ const Navbar = () => {
                         <NavLink
                             className="nav-link"
                             to="/users"
-                            activeClassName="active"
+                            activeclassname="active"
                         >
                             Users
                         </NavLink>
