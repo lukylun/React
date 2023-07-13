@@ -26,6 +26,8 @@ function App() {
   return (
     <div className="App">
       <h1>Scott Coder</h1>
+      {/* 컴포넌트 따로 파일 생성해서
+      중복 최소화 -> 유지보수 용이 */}
       <Counter click="click1"/>
       <Counter click={buttonName}/>
       <Counter />

@@ -9,10 +9,12 @@ function App() {
     setCondition(!condition);
   }
 
+  // 컴포넌트가 처음 마운트될 때 console에 출력
   useEffect(()  => {
     console.log(condition)
   }, [condition])
 
+  // 조건부
   const renderCondition = condition
     ? "True"
     : "False"
@@ -23,6 +25,7 @@ function App() {
       <div>
         {renderCondition}
       </div>
+      {/* 버튼을 클릭할 때마다 토글상태 변경 */}
       <button onClick={toggle}>Toggle</button>
     </div>
   );
