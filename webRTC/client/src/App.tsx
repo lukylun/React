@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { Join } from "./components/JoinButton";
+import { Join } from "./components/CreateButton";
 
 
 function App() {
