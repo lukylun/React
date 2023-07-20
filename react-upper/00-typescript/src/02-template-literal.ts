@@ -45,23 +45,10 @@
       content: string;
     }[];
   }): string {
-    return `
-      <table class="table">
-        <caption class="sr-only">${data.caption}</caption>
-        ${data.rows
-          .map(
-            (item) =>
-              `
-              <tr>
-                <th>${item.headline}</th>
-                <td>${item.content}</td>
-              </tr>
-            `
-          )
-          .join('')}
-      </table>
-    `;
+
+    return ``;
   }
+
 
   function renderTable(data: {
     caption: string;

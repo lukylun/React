@@ -10,5 +10,8 @@
     "live-server": "1.2.2",
     "ts-node": "10.9.1",
     "typescript": "5.1.6"
+  },
+  "dependencies": {
+    "pnpm": "^8.6.9"
   }
 }
